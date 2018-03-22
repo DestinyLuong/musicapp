@@ -1,3 +1,9 @@
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler{
  color: blue;
 }
+#search button{
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
