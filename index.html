@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Music App</title>
       <!-- Bootstrap CSS library -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
@@ -15,55 +15,73 @@
 
        <!-- Your JavaScript files -->
       <script src="script.js"></script>
+    
+       
   </head>
+  
   <body>
     <div class="container"> <!---container start here--->
-    
-      <div class="row"><!---Dequan row: NavBar--->
-        <div class="col text-center">
-          <h1>Music App for Xavi</h1>
+      <h1>Music App for Xavi</h1>
+        <div id="bar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </nav>
         </div>
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container"><!---navigation start here--->
-             <div class="navbar-header" class="col text-center">
-                    <a class="navbar-brand" href="#">Homepage</a>
-                    <a class="navbar-brand" href="#">About</a>
-                    <a class="navbar-brand" href="#">Music</a>
-
-             </div>
-          </div>
-        </nav><!---navigation ends here--->
           <div class="container"><!---image starts here--->
            <!---image goes here--->
           </div><!--- image ends here--->
-      </div><!---Dequan row ends here -->
+          
+      <!---Dequan row ends here -->
       
       <div class="row"><!---Destiny row Search Results--->
-        <div class="container" id="results">
-            <div class="row" id="image">
-                <div class="col-sm-4">Image</div>
-                <div class="col-sm-8" id="description">Description</div>
-            </div>
-        </div>
         <div class="container" id="input"><!---input start here--->
           <div class="row">
             <div class=col-md-3>
             </div>
-            <div class=col-md-6>
-              <input class="col text-center" id=user input></input>
+            
+            <div class=col-md-4>
+              <input class="col text-center" id="user input"></input>
             </div>
+            
+            <div class=col-md-2>
+            <button id= "user input">Search</button>
+            </div>
+            
             <div class=col-md-3>
-            <div>
-            <button id="search button"></button>
-          </div>
         </div>
-      </div><!---input ends here--->
-      
-      <div class="row"><!---Evelin row: Pg Info--->
+        <div class="container" id="results">
+            <div class="row" id="song">
+                <div class="col-sm-4"  id="image">Image</div>
+                <div class="col-sm-8" id="des">
+                  <div id="title">
+                    <h3> Song Title</h3>
+                  </div>
+                  <div id="des">
+                    <h4>Artist</h4>
+                  </div>
+                  <div id="des">
+                    <p>Description</p>
+                  </div>
+                  <div id="link">
+                    <p>Link<p>
+                  </div>
+                </div>
+            </div>
+        </div>
         
+      </div><!---input ends here--->
+        
+      <div class="row"><!---Evelin row: Pg Info--->
+        <h2>Name of App</h2>
+        <p id="info">We have been adding music from all over the world for the past decade! We want to keep our clients satisfied with our app by having music for everyone. 
+          Our music can be browsed by searching for the artist, album, or playlist.  
+        </p>
       </div>
       
-      
-      
+    
     </div> <!---container ends here--->
   </body>

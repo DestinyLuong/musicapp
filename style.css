@@ -1,9 +1,36 @@
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler{
- color: blue;
-}
+
 #search button{
     height: 100px;
     width: 100px;
     justify-content: center;
     align-items: center;
 }
+
+#bar {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background: red;
+}
+ 
+ul li { 
+  display:inline-block;
+  padding:1em 10px;
+}
+ 
+li a {
+  color:#FFF;
+  text-decoration:none;
+  font-weight:bold;
+  text-transform:uppercase;
+  font-family:helvetica;
+}
+ 
+.navbar-nav {
+ text-align:center;
+}
+ #info { 
+   text-align: center;
+ }
+ 
