@@ -24,7 +24,7 @@ $.ajax({
 
 function displayResults(songs){
 /* This function uses "getAPI() and uses a FORLOOP to APPEND it to the page"*/
-    for(var i =0; i<=songs.length; i++){
+    for(var i =0; i<=10; i++){
         $("#results").append(`<div class="row" id="song` + i + `">
                 <div class="col-sm-4"  id="image` + i +`"></div>
                 <div class="col-sm-8" id="des` + i +`">
@@ -55,6 +55,7 @@ $(document).ready(function(){
     /* Input Button Click Function*/
     $("button").click(function(){
         var a = getUserInput();
+        $("#results").html(" ");
         getAPI(a);
         
     });
