@@ -17,21 +17,38 @@ $.ajax({
             url: a,
             method: "GET",
             success: function(response){
-                for(var i =0; i<response.length; i++){
-                    displayResults();
-                }
+                displayResults(response);
             } 
         });  
 }
 
 function displayResults(songs){
 /* This function uses "getAPI() and uses a FORLOOP to APPEND it to the page"*/
-    $("#title").append("<h3>" + songs[0].title + "</h3>");
-    $("#image").append("<img src=" + songs[0].artwork_url + ">");
-    $("#des").append("<p>" + songs[0].description + "</p>");
-    $("#artist").append("<h4>" + songs[0].username + "</h4>");
-    $("#link").append("<a>" + songs[0].permalink_url + "</a>");
-    
+    for(var i =0; i<=10; i++){
+        $("#results").append(`<div class="row" id="song` + i + `">
+                <div class="col-sm-4"  id="image` + i +`">Image</div>
+                <div class="col-sm-8" id="des` + i +`">
+                  <div id="title` + i +`">
+                    <h3> Song Title</h3>
+                  </div>
+                  <div id="art` + i +`">
+                    <h4>Artist</h4>
+                  </div>
+                  <div id="des` + i +`">
+                    
+                  </div>
+                  <div id="link` + i +`">
+                    <p>Link<p>
+                  </div>
+                </div>
+            </div>`);
+        $("#title" +i).append("<div id='title"+ i+"'"+">"+"<h3>"+ songs[i].title + "</h3>"+"</div>");
+        $("#image" +i).append("<div id='image"+ i+"'"+">"+"<img src=" + songs[i].artwork_url + ">"+"</div>");
+        $("#des" +i).append("<div id='des"+ i+"'"+">"+"<p>" +"Description: " + songs[i].description + "</p>"+"</div>");
+        $("#artist" +i).append("<div id='artist"+ i+"'"+">"+"<h4>" + songs[i].username + "</h4>"+"</div>");
+        $("#link" +i).append("<div id='link"+ i+"'"+">"+"<a href="+'"' + songs[i].permalink_url+'"'+">"+"Click Here"+"</a>"+"</div>");
+        console.log("times");
+    }
 }  
 
 $(document).ready(function(){

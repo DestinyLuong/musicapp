@@ -34,3 +34,25 @@ li a {
    text-align: center;
  }
  
+#whatAreWe {
+    text-align: center;
+    font-weight: bold;
+    background-color: pink;
+    font-size: 70px;
+}
+#WhatWeDO {
+    font-size: 24px;
+    text-align: center;
+    display:none;
+}
+#HowItBegan {
+    text-align: center;
+ background-color: pink;
+    font-weight: bold;
+    font-size: 70px;
+}
+#started {
+    display: none;
+     text-align: center;
+     font-size: 24px;
+}
