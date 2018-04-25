@@ -24,21 +24,21 @@ $.ajax({
 
 function displayResults(songs){
 /* This function uses "getAPI() and uses a FORLOOP to APPEND it to the page"*/
-    for(var i =0; i<=10; i++){
+    for(var i =0; i<=songs.length; i++){
         $("#results").append(`<div class="row" id="song` + i + `">
-                <div class="col-sm-4"  id="image` + i +`">Image</div>
+                <div class="col-sm-4"  id="image` + i +`"></div>
                 <div class="col-sm-8" id="des` + i +`">
                   <div id="title` + i +`">
-                    <h3> Song Title</h3>
+                   
                   </div>
                   <div id="art` + i +`">
-                    <h4>Artist</h4>
+                    
                   </div>
                   <div id="des` + i +`">
                     
                   </div>
                   <div id="link` + i +`">
-                    <p>Link<p>
+                   
                   </div>
                 </div>
             </div>`);
